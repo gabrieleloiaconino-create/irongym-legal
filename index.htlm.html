@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - IronGym</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { color: #f97316; border-bottom: 3px solid #f97316; padding-bottom: 8px; }
+  h2 { color: #1a1a1a; margin-top: 30px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 30px; }
+  .highlight { background: #fff7ed; border-left: 4px solid #f97316; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  a { color: #f97316; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — IronGym</h1>
+<p class="meta">Ultimo aggiornamento: 13 maggio 2026</p>
+
+<p>La presente Privacy Policy descrive come l'applicazione mobile <strong>IronGym</strong> (di seguito "l'App") gestisce i dati durante l'utilizzo. Rispettiamo la tua privacy e cerchiamo di raccogliere il minimo indispensabile.</p>
+
+<div class="highlight">
+<strong>In sintesi:</strong> IronGym memorizza tutti i tuoi dati di allenamento <strong>solo sul tuo dispositivo</strong>. Non abbiamo account utente, non vendiamo dati, non usiamo analytics. L'unica eccezione: quando usi la funzione "Genera con AI", inviamo i dati del tuo profilo a un servizio esterno (Google Gemini) per ricevere una scheda personalizzata.
+</div>
+
+<h2>1. Dati raccolti e dove sono memorizzati</h2>
+
+<h3>Dati salvati localmente sul tuo dispositivo</h3>
+<p>L'App memorizza i seguenti dati <strong>esclusivamente</strong> nello storage protetto del tuo telefono, mai su server remoti:</p>
+<ul>
+  <li>Nome che hai inserito nell'onboarding</li>
+  <li>Età, sesso, altezza, peso, obiettivo</li>
+  <li>Allenamenti creati ed esercizi configurati</li>
+  <li>Storico delle sessioni di allenamento (date, pesi, ripetizioni, durata)</li>
+  <li>Misurazioni corporee aggiunte manualmente</li>
+  <li>Preferenze di personalizzazione (tema, lingua, colore)</li>
+</ul>
+<p>Disinstallando l'App, questi dati vengono <strong>cancellati definitivamente</strong>.</p>
+
+<h3>Dati inviati a servizi esterni</h3>
+<p>Soltanto quando utilizzi la funzione <strong>"Genera con AI"</strong>, i seguenti dati vengono inviati al nostro server intermediario (Cloudflare Workers) e successivamente all'API di <strong>Google Gemini</strong>:</p>
+<ul>
+  <li>Età, sesso, peso, altezza, obiettivo (dal tuo profilo)</li>
+  <li>Preferenze allenamento (livello, giorni/settimana, durata, focus, attrezzatura)</li>
+  <li>Eventuali limitazioni/infortuni che hai inserito</li>
+  <li>Lingua dell'app</li>
+</ul>
+<p>Questi dati vengono usati <strong>solo</strong> per generare la scheda di allenamento. Non vengono memorizzati sui nostri server. Per il trattamento dei dati da parte di Google Gemini, consulta la <a href="https://policies.google.com/privacy">Privacy Policy di Google</a>.</p>
+
+<h3>Rate limiting</h3>
+<p>Per evitare abusi, il nostro server registra <strong>l'indirizzo IP</strong> dell'utente solo per contare le richieste giornaliere alla funzione AI. Questo dato viene conservato massimo 24 ore e poi cancellato automaticamente. Non viene incrociato con altri dati.</p>
+
+<h2>2. Permessi Android richiesti</h2>
+<ul>
+  <li><strong>Internet</strong>: per generare schede con AI e caricare le immagini di riferimento degli esercizi.</li>
+  <li><strong>Notifiche</strong>: per avvisarti del termine del timer di riposo durante l'allenamento.</li>
+  <li><strong>Vibrazione</strong>: per il feedback aptico a fine timer.</li>
+  <li><strong>Wake lock</strong> (mantenere lo schermo acceso): solo durante una sessione di allenamento attiva.</li>
+</ul>
+
+<h2>3. Cosa NON facciamo</h2>
+<ul>
+  <li>❌ Non abbiamo account utente né registrazione</li>
+  <li>❌ Non usiamo Google Analytics, Firebase Analytics o tracker simili</li>
+  <li>❌ Non vendiamo né condividiamo i tuoi dati con terze parti</li>
+  <li>❌ Non mostriamo pubblicità (al momento)</li>
+  <li>❌ Non leggiamo la tua rubrica, posizione GPS, microfono, fotocamera</li>
+  <li>❌ Non inviamo email né raccogliamo il tuo indirizzo email</li>
+</ul>
+
+<h2>4. Servizi di terze parti utilizzati</h2>
+<ul>
+  <li><strong>Cloudflare Workers</strong>: server proxy per le richieste AI. <a href="https://www.cloudflare.com/privacypolicy/">Privacy Policy</a></li>
+  <li><strong>Google Gemini API</strong>: generazione AI delle schede. <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
+  <li><strong>GitHub (raw.githubusercontent.com)</strong>: caricamento immagini di riferimento degli esercizi (open-source database). <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Policy</a></li>
+</ul>
+
+<h2>5. Sicurezza</h2>
+<p>I dati salvati localmente sono protetti dallo storage sicuro di Android. Le comunicazioni con i nostri server avvengono solo via HTTPS (crittografia TLS). Le richieste alla nostra API sono autenticate tramite token per impedire utilizzi non autorizzati.</p>
+
+<h2>6. Diritti dell'utente (GDPR)</h2>
+<p>Poiché non raccogliamo dati personali sui nostri server (oltre all'IP per il rate limiting, conservato 24 ore), non c'è praticamente nulla che possiamo cancellare per te a livello server. Tutti i tuoi dati sono e restano sul tuo dispositivo.</p>
+<p>In ogni caso, hai sempre diritto a:</p>
+<ul>
+  <li>Accedere ai tuoi dati (basta aprire l'app, sono tutti lì)</li>
+  <li>Cancellarli (disinstallando l'app o usando le impostazioni di Android)</li>
+  <li>Esportarli (sezione "Storico" > Export Excel; sezione "Impostazioni" > Condividi)</li>
+</ul>
+
+<h2>7. Modifiche a questa Policy</h2>
+<p>Eventuali modifiche verranno pubblicate aggiornando la data in cima a questo documento. Continuando a usare l'App dopo le modifiche, accetti la nuova versione.</p>
+
+<h2>8. Contatti</h2>
+<p>Per qualsiasi domanda sulla privacy o sui dati gestiti dall'App, contatta:</p>
+<p><strong>Email:</strong> <a href="mailto:gabrielox.work.app@gmail.com">gabrielox.work.app@gmail.com</a></p>
+
+<p style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; color: #888; font-size: 13px;">
+IronGym — App per il tracciamento allenamenti in palestra.
+</p>
+
+</body>
+</html>
