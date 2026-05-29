@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -8,174 +8,101 @@
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #1a1a1a; }
   h1 { color: #f97316; border-bottom: 3px solid #f97316; padding-bottom: 8px; }
   h2 { color: #1a1a1a; margin-top: 30px; }
-  h3 { color: #444; margin-top: 18px; }
   ul { padding-left: 22px; }
   li { margin-bottom: 6px; }
   .meta { color: #666; font-size: 14px; margin-bottom: 30px; }
   .highlight { background: #fff7ed; border-left: 4px solid #f97316; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
-  .danger { background: #fef2f2; border-left: 4px solid #ef4444; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
   a { color: #f97316; }
-  code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 90%; }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy — IronGym</h1>
-<p class="meta">Ultimo aggiornamento: 28 maggio 2026</p>
+<p class="meta">Ultimo aggiornamento: 29 maggio 2026</p>
 
-<p>La presente Privacy Policy descrive come l'applicazione mobile <strong>IronGym</strong> (di seguito "l'App") gestisce i dati durante l'utilizzo. Rispettiamo la tua privacy e raccogliamo solo il minimo indispensabile per offrirti le funzioni dell'app.</p>
+<p>La presente Privacy Policy descrive come l'applicazione mobile <strong>IronGym</strong> (di seguito "l'App") gestisce i dati durante l'utilizzo. Rispettiamo la tua privacy e cerchiamo di raccogliere il minimo indispensabile.</p>
 
 <div class="highlight">
-<strong>In sintesi:</strong> tutti i tuoi dati di allenamento sono memorizzati <strong>localmente sul tuo dispositivo</strong>. Se decidi di accedere con <strong>Google Sign-In</strong> (opzionale), abilitiamo un backup automatico su Firebase per permetterti di ritrovare i tuoi dati al cambio di telefono. La funzione "Genera con AI" invia il tuo profilo a Google Gemini per crearti una scheda personalizzata. Non vendiamo dati, non mostriamo pubblicità, non usiamo analytics di tracciamento.
+<strong>In sintesi:</strong> IronGym salva i tuoi dati di allenamento <strong>sul tuo dispositivo</strong>. Se scegli di <strong>accedere con Google</strong> (facoltativo), i dati vengono anche sincronizzati in modo sicuro sul cloud (Google Firebase) per backup e ripristino. Quando usi "Genera con AI" inviamo i dati del tuo profilo a Google Gemini per ricevere una scheda. L'App mostra <strong>pubblicità tramite Google AdMob</strong>. Non vendiamo i tuoi dati.
 </div>
 
 <h2>1. Dati raccolti e dove sono memorizzati</h2>
 
-<h3>1.1 Dati salvati localmente sul tuo dispositivo (sempre)</h3>
-<p>Indipendentemente dall'autenticazione, l'App memorizza nello storage protetto del telefono:</p>
+<h3>Dati salvati localmente sul tuo dispositivo</h3>
+<p>L'App memorizza i seguenti dati <strong>esclusivamente</strong> nello storage protetto del tuo telefono, mai su server remoti:</p>
 <ul>
-  <li>Nome inserito nell'onboarding</li>
+  <li>Nome che hai inserito nell'onboarding</li>
   <li>Età, sesso, altezza, peso, obiettivo</li>
   <li>Allenamenti creati ed esercizi configurati</li>
   <li>Storico delle sessioni di allenamento (date, pesi, ripetizioni, durata)</li>
   <li>Misurazioni corporee aggiunte manualmente</li>
-  <li>Eventuali foto di progresso fisico (vedi sezione dedicata)</li>
-  <li>Preferenze di personalizzazione (tema, lingua, colore, suoneria)</li>
+  <li>Preferenze di personalizzazione (tema, lingua, colore)</li>
 </ul>
-<p>Disinstallando l'App, questi dati locali vengono cancellati definitivamente dal telefono.</p>
+<p>Disinstallando l'App, questi dati locali vengono <strong>cancellati definitivamente</strong> (se non hai effettuato l'accesso con Google).</p>
+<p>La <strong>foto profilo</strong> che eventualmente imposti resta <strong>solo sul dispositivo</strong> e non viene mai sincronizzata né inviata a server.</p>
 
-<h3>1.2 Autenticazione utente (Firebase Authentication)</h3>
-<p>Per garantire la sicurezza delle chiamate ai nostri server (in particolare la funzione AI) e abilitare il backup cloud, l'App utilizza <strong>Firebase Authentication</strong> di Google. Sono possibili due modalità:</p>
-<ul>
-  <li><strong>Anonimo (predefinito)</strong>: al primo avvio l'App genera automaticamente un identificatore utente anonimo (uid). Questo uid non è collegato a nessun dato personale identificativo. Serve esclusivamente per autenticare le richieste al nostro server AI e contare la quota giornaliera.</li>
-  <li><strong>Google Sign-In (opzionale)</strong>: se decidi di attivare il backup cloud, ti chiediamo di accedere col tuo account Google. In questo caso raccogliamo: <strong>indirizzo email</strong>, <strong>nome visualizzato</strong>, <strong>foto profilo</strong>, e uid Firebase. Questi dati provengono dal tuo account Google.</li>
-</ul>
-<p>Puoi disconnetterti in qualsiasi momento da Impostazioni → Profilo → Account.</p>
+<h3>Accesso con Google e backup cloud (facoltativo)</h3>
+<p>Puoi usare l'App <strong>senza alcun account</strong> (tutti i dati restano solo sul dispositivo). Se invece scegli di <strong>accedere con Google</strong>, viene creato un account e i tuoi dati di allenamento (profilo, allenamenti, storico, misurazioni, preferenze) vengono <strong>sincronizzati e salvati su Google Firebase (Firestore)</strong> per consentirti backup e ripristino su più dispositivi. In questo caso trattiamo il tuo identificativo account Google (UID) ed eventualmente nome/email forniti da Google. Puoi disconnetterti o eliminare l'account dalle impostazioni dell'App. Vedi la <a href="https://firebase.google.com/support/privacy">Privacy di Firebase</a>.</p>
 
-<h3>1.3 Backup cloud (Cloud Firestore, opzionale)</h3>
-<p>Se sei autenticato con Google Sign-In, l'App attiva automaticamente il backup dei tuoi dati su <strong>Cloud Firestore</strong> (servizio Google) per consentirti di ritrovarli su un nuovo telefono o dopo una reinstallazione. I dati sincronizzati sono:</p>
-<ul>
-  <li>Profilo utente (nome, età, sesso, altezza, peso, obiettivo)</li>
-  <li>Allenamenti creati e archiviati</li>
-  <li>Storico sessioni di allenamento</li>
-  <li>Misurazioni corporee</li>
-  <li>Preferenze app (tema, lingua, colore, suono, dimensione testo)</li>
-</ul>
-<p>I dati sono salvati nei server Google ubicati nell'Unione Europea (regione <code>europe-west</code>). Sono crittografati in transito (HTTPS) e a riposo (Firebase Firestore default encryption).</p>
-<p><strong>Non vengono sincronizzati</strong>: foto di progresso fisico (restano solo sul dispositivo).</p>
-<p>Se sei utente <strong>anonimo</strong> (senza Google Sign-In), <strong>nessun dato viene caricato sui nostri server</strong>: tutto resta locale.</p>
+<h3>Pubblicità (Google AdMob)</h3>
+<p>L'App mostra annunci tramite <strong>Google AdMob</strong>. In particolare, vedi un annuncio con premio ("rewarded") quando generi una scheda con l'AI. Per mostrare e misurare gli annunci, AdMob può raccogliere e trattare <strong>identificatori del dispositivo (incluso l'ID pubblicità) e dati di utilizzo</strong>. In Europa (GDPR) ti viene richiesto il <strong>consenso</strong> prima di mostrare annunci personalizzati. Puoi reimpostare o limitare l'ID pubblicità dalle impostazioni Google del tuo dispositivo. Per come Google tratta questi dati: <a href="https://policies.google.com/technologies/partner-sites">Come Google usa i dati</a>.</p>
 
-<h3>1.4 Funzione "Genera con AI"</h3>
-<p>Solo quando utilizzi esplicitamente la funzione <strong>"Genera con AI"</strong>, vengono inviati al nostro server intermediario (Cloudflare Workers) e poi all'API di <strong>Google Gemini</strong>:</p>
+<h3>Dati inviati a servizi esterni</h3>
+<p>Soltanto quando utilizzi la funzione <strong>"Genera con AI"</strong>, i seguenti dati vengono inviati al nostro server intermediario (Cloudflare Workers) e successivamente all'API di <strong>Google Gemini</strong>:</p>
 <ul>
   <li>Età, sesso, peso, altezza, obiettivo (dal tuo profilo)</li>
   <li>Preferenze allenamento (livello, giorni/settimana, durata, focus, attrezzatura)</li>
   <li>Eventuali limitazioni/infortuni che hai inserito</li>
   <li>Lingua dell'app</li>
-  <li>Token di autenticazione Firebase (per validare la richiesta)</li>
 </ul>
-<p>Questi dati vengono usati esclusivamente per generare la scheda di allenamento richiesta e non vengono memorizzati permanentemente sui nostri server.</p>
+<p>Questi dati vengono usati <strong>solo</strong> per generare la scheda di allenamento. Non vengono memorizzati sui nostri server. Per il trattamento dei dati da parte di Google Gemini, consulta la <a href="https://policies.google.com/privacy">Privacy Policy di Google</a>.</p>
 
-<h3>1.5 Rate limiting funzione AI</h3>
-<p>Per limitare abusi, registriamo nel nostro database temporaneo (Cloudflare KV) il tuo uid Firebase associato a un contatore di generazioni giornaliere. Il contatore si azzera ogni 24 ore. Non viene incrociato con altri dati né condiviso.</p>
+<h3>Rate limiting</h3>
+<p>Per evitare abusi, il nostro server registra <strong>l'indirizzo IP</strong> dell'utente solo per contare le richieste giornaliere alla funzione AI. Questo dato viene conservato massimo 24 ore e poi cancellato automaticamente. Non viene incrociato con altri dati.</p>
 
-<h2>2. Foto di progresso fisico</h2>
-<p>IronGym permette di scattare foto opzionali per tracciare i progressi fisici nel tempo. Queste foto:</p>
+<h2>2. Permessi Android richiesti</h2>
 <ul>
-  <li>Sono salvate <strong>esclusivamente</strong> nella memoria interna del telefono</li>
-  <li><strong>NON</strong> vengono inviate ad alcun server (nemmeno con Google Sign-In attivo)</li>
-  <li><strong>NON</strong> sono accessibili ad altre app</li>
-  <li><strong>NON</strong> appaiono nella galleria pubblica del telefono</li>
-  <li>Possono essere eliminate in qualsiasi momento dall'app</li>
-  <li>Vengono cancellate quando disinstalli IronGym</li>
-</ul>
-<p>Per scattare foto IronGym richiede il permesso <code>android.permission.CAMERA</code>, che puoi negare o revocare in qualsiasi momento dalle impostazioni Android.</p>
-
-<h2>3. Permessi Android richiesti</h2>
-<ul>
-  <li><strong>Internet</strong>: per generare schede con AI, autenticarsi con Firebase, sincronizzare il backup cloud, caricare le immagini di riferimento degli esercizi.</li>
+  <li><strong>Internet</strong>: per generare schede con AI e caricare le immagini di riferimento degli esercizi.</li>
   <li><strong>Notifiche</strong>: per avvisarti del termine del timer di riposo durante l'allenamento.</li>
   <li><strong>Vibrazione</strong>: per il feedback aptico a fine timer.</li>
-  <li><strong>Wake lock</strong>: per mantenere lo schermo acceso durante una sessione di allenamento.</li>
-  <li><strong>Foreground service</strong>: per il timer di riposo nativo persistente.</li>
-  <li><strong>Camera</strong> (opzionale): solo se vuoi scattare foto di progresso.</li>
+  <li><strong>Wake lock</strong> (mantenere lo schermo acceso): solo durante una sessione di allenamento attiva.</li>
 </ul>
 
-<h2>4. Cosa NON facciamo</h2>
+<h2>3. Cosa NON facciamo</h2>
 <ul>
-  <li>❌ Non usiamo Google Analytics, Firebase Analytics o tracker pubblicitari</li>
-  <li>❌ Non vendiamo, affittiamo né condividiamo i tuoi dati con terze parti per scopi commerciali</li>
-  <li>❌ Non mostriamo pubblicità (al momento)</li>
-  <li>❌ Non leggiamo la tua rubrica, posizione GPS, microfono</li>
-  <li>❌ Non profilatura per advertising, no remarketing</li>
-  <li>❌ Non usiamo i tuoi dati di allenamento per addestrare modelli AI</li>
-  <li>❌ Le foto di progresso non lasciano MAI il tuo dispositivo</li>
+  <li>❌ Non <strong>vendiamo</strong> i tuoi dati personali</li>
+  <li>❌ Non usiamo l'account o l'accesso con Google per finalità diverse dal backup/ripristino dei tuoi dati</li>
+  <li>❌ Non leggiamo la tua rubrica, la posizione GPS o il microfono</li>
+  <li>❌ Non accediamo alla fotocamera/galleria se non quando scegli tu di aggiungere una foto (profilo o progressi), che resta sul dispositivo</li>
+  <li>❌ L'accesso con Google è <strong>facoltativo</strong>: senza, nessun dato lascia il dispositivo (salvo la funzione AI e la pubblicità)</li>
 </ul>
 
-<h2>5. Servizi di terze parti utilizzati</h2>
+<h2>4. Servizi di terze parti utilizzati</h2>
 <ul>
-  <li><strong>Firebase Authentication (Google)</strong>: autenticazione utenti anonima e Google Sign-In. <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
-  <li><strong>Cloud Firestore (Google)</strong>: backup automatico dei dati utente per chi è autenticato con Google. <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
-  <li><strong>Cloudflare Workers</strong>: server proxy per le richieste AI. <a href="https://www.cloudflare.com/privacypolicy/">Privacy Policy</a></li>
+  <li><strong>Google AdMob</strong>: pubblicità nell'app (raccoglie ID pubblicità e dati di utilizzo). <a href="https://policies.google.com/technologies/ads">Privacy Policy</a></li>
+  <li><strong>Google Firebase</strong> (Authentication + Firestore): accesso con Google e backup/sincronizzazione cloud dei dati (solo se accedi). <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
   <li><strong>Google Gemini API</strong>: generazione AI delle schede. <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
-  <li><strong>GitHub (raw.githubusercontent.com)</strong>: caricamento immagini di riferimento esercizi da un database open-source. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Policy</a></li>
+  <li><strong>Cloudflare Workers</strong>: server proxy per le richieste AI. <a href="https://www.cloudflare.com/privacypolicy/">Privacy Policy</a></li>
+  <li><strong>GitHub Pages</strong>: caricamento immagini/GIF di riferimento degli esercizi. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Policy</a></li>
 </ul>
 
-<h2>6. Sicurezza dei dati</h2>
+<h2>5. Sicurezza</h2>
+<p>I dati salvati localmente sono protetti dallo storage sicuro di Android. Le comunicazioni con i nostri server avvengono solo via HTTPS (crittografia TLS). Le richieste alla nostra API sono autenticate tramite token per impedire utilizzi non autorizzati.</p>
+
+<h2>6. Diritti dell'utente (GDPR)</h2>
+<p>Poiché non raccogliamo dati personali sui nostri server (oltre all'IP per il rate limiting, conservato 24 ore), non c'è praticamente nulla che possiamo cancellare per te a livello server. Tutti i tuoi dati sono e restano sul tuo dispositivo.</p>
+<p>In ogni caso, hai sempre diritto a:</p>
 <ul>
-  <li>Tutte le comunicazioni con i nostri server avvengono via <strong>HTTPS (TLS 1.2+)</strong>.</li>
-  <li>I dati cloud su Firestore sono crittografati a riposo dai server Google.</li>
-  <li>Le richieste al nostro server AI sono autenticate con token Firebase firmati (RS256).</li>
-  <li>I dati nel cloud sono accessibili <strong>esclusivamente</strong> dal proprietario dell'account Google associato (regole di sicurezza Firestore: <code>users/{uid}</code> leggibile/scrivibile solo se <code>request.auth.uid == uid</code>).</li>
-  <li>Le foto di progresso sono salvate in una directory privata dell'app (Android scoped storage).</li>
+  <li>Accedere ai tuoi dati (basta aprire l'app, sono tutti lì)</li>
+  <li>Cancellarli (disinstallando l'app o usando le impostazioni di Android)</li>
+  <li>Esportarli (sezione "Storico" > Export Excel; sezione "Impostazioni" > Condividi)</li>
 </ul>
 
-<h2>7. Diritti dell'utente (GDPR)</h2>
-<p>Hai sempre diritto a:</p>
-<ul>
-  <li><strong>Accesso</strong>: tutti i tuoi dati sono visibili nell'app. Puoi esportarli in formato Excel (Storico) o JSON (Impostazioni → Esporta backup).</li>
-  <li><strong>Cancellazione completa</strong> dei dati e dell'account: vedi sezione successiva.</li>
-  <li><strong>Portabilità</strong>: usa Esporta backup per ottenere tutti i tuoi dati in formato JSON, riutilizzabile.</li>
-  <li><strong>Opposizione/limitazione</strong>: puoi scegliere di non fare Google Sign-In, restando sempre utente anonimo (in tal caso nessun dato viene caricato sui nostri server).</li>
-  <li><strong>Reclamo</strong>: hai diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (https://www.garanteprivacy.it).</li>
-</ul>
+<h2>7. Modifiche a questa Policy</h2>
+<p>Eventuali modifiche verranno pubblicate aggiornando la data in cima a questo documento. Continuando a usare l'App dopo le modifiche, accetti la nuova versione.</p>
 
-<h2>8. Come cancellare account e dati</h2>
-<div class="danger">
-<p><strong>Per cancellare in modo completo e definitivo il tuo account IronGym (utenti loggati con Google)</strong>:</p>
-<ol>
-  <li>Apri l'app IronGym</li>
-  <li>Vai in <strong>Impostazioni → Profilo</strong></li>
-  <li>Tocca <strong>"🗑 Elimina account e dati"</strong></li>
-  <li>Conferma due volte (l'operazione è irreversibile)</li>
-</ol>
-<p>L'app cancellerà istantaneamente:</p>
-<ul>
-  <li>Tutti i dati cloud (backup Firestore)</li>
-  <li>L'account Firebase Authentication</li>
-  <li>Tutti i dati locali sul telefono</li>
-</ul>
-</div>
-<p><strong>Per utenti anonimi (senza login Google)</strong>: basta disinstallare l'app. Non c'è nulla nei nostri server tranne il contatore quota AI (cancellato automaticamente entro 24h).</p>
-<p><strong>Richiesta via email</strong>: in alternativa puoi richiedere la cancellazione completa scrivendo a <a href="mailto:gabrielox.work.app@gmail.com">gabrielox.work.app@gmail.com</a>. Risponderemo entro 30 giorni.</p>
-
-<h2>9. Conservazione dei dati</h2>
-<ul>
-  <li><strong>Dati locali</strong>: finché l'app è installata. Cancellati al disinstall.</li>
-  <li><strong>Dati Firebase (account + Firestore)</strong>: finché l'utente non cancella l'account. Non c'è scadenza automatica.</li>
-  <li><strong>Contatore quota AI</strong>: massimo 24 ore.</li>
-  <li><strong>Log server</strong>: nessun log permanente delle richieste AI.</li>
-</ul>
-
-<h2>10. Bambini</h2>
-<p>IronGym non è destinata a minori di 13 anni. Se sei genitore e ritieni che tuo figlio abbia inserito dati nell'app, contattaci all'indirizzo email sopra per la cancellazione immediata.</p>
-
-<h2>11. Modifiche a questa Policy</h2>
-<p>Eventuali modifiche verranno pubblicate aggiornando la data in cima a questo documento. Modifiche sostanziali verranno comunicate anche tramite notifica in-app o nelle note di rilascio della nuova versione. Continuando a usare l'App dopo le modifiche, accetti la nuova versione.</p>
-
-<h2>12. Titolare del trattamento e contatti</h2>
-<p>Titolare del trattamento: <strong>Gabriele Loiacono</strong> (sviluppatore di IronGym).</p>
-<p>Per qualsiasi domanda sulla privacy, esercizio dei diritti GDPR, o richiesta di cancellazione dati, contatta:</p>
+<h2>8. Contatti</h2>
+<p>Per qualsiasi domanda sulla privacy o sui dati gestiti dall'App, contatta:</p>
 <p><strong>Email:</strong> <a href="mailto:gabrielox.work.app@gmail.com">gabrielox.work.app@gmail.com</a></p>
 
 <p style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; color: #888; font-size: 13px;">
@@ -184,5 +111,3 @@ IronGym — App per il tracciamento allenamenti in palestra.
 
 </body>
 </html>
-</content>
-</invoke>
